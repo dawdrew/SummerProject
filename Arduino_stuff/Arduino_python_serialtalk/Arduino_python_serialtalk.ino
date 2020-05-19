@@ -28,7 +28,7 @@ void loop() {
       // display each character to the LCD
       lcd.write(Serial.read());
     }
-    Serial.write("hi python \n");
+    Serial.write("hi python");
   }
   // put your main code here, to run repeatedly:
 }

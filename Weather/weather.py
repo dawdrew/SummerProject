@@ -45,16 +45,26 @@ arduino.baudrate = 9600
 arduino.port = ard_comport
 arduino.open()
 
-time.sleep(2)
+time.sleep(2) # DO NOT DELETE THIS!!!
+arduino.flushInput()
 arduino.write(b'hi')
 print('sent')
-# from_arduino = arduino.readline().decode()
-# print(from_arduino)
-# time.sleep(2)
-arduino.write('does this work'.encode())
-print('sent')
-# time.sleep(2)
+
+
+time.sleep(1)
+print(arduino.inWaiting())
 from_arduino = arduino.readline().decode()
 print(from_arduino)
+
+time.sleep(1)
+arduino.write('does this work'.encode())
+print('sent')
+
+
+from_arduino = arduino.readline().decode()
+print(from_arduino)
+
+
+
 arduino.close()
 
