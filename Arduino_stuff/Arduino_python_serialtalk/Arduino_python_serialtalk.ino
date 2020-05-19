@@ -14,7 +14,7 @@ void setup() {
   lcd.write("PENETRATED");
 //  lcd.noCursor();
 //  delay(2000);
-
+  Serial.write("ready");
 }
 
 void loop() {
@@ -27,8 +27,9 @@ void loop() {
     while (Serial.available() > 0) {
       // display each character to the LCD
       lcd.write(Serial.read());
+
     }
-    Serial.write("hi python");
+    Serial.write("hi python what if this is really loong and not jsut a simple short little string??!?!?! then what will you do?!?!\n");
   }
   // put your main code here, to run repeatedly:
 }

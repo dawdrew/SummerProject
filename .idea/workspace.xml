@@ -6,8 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="183f9da6-7d3b-44de-bd1b-55f6a156e905" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Weather/ard_connect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Weather/weather.py" beforeDir="false" afterPath="$PROJECT_DIR$/Weather/weather.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arduino_stuff/Arduino_python_serialtalk/Arduino_python_serialtalk.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Arduino_stuff/Arduino_python_serialtalk/Arduino_python_serialtalk.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather/weather.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +34,7 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunManager">
-    <configuration name="weather" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ard_connect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SummerProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -44,7 +46,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Weather/weather.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Andrew Rearson\PycharmProjects\SummerProject\Weather\ard_connect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -55,7 +57,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.weather" />
+        <item itemvalue="Python.ard_connect" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589854018211</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="MID STEP">
+      <created>1589856967828</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589856967828</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,7 +119,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="weather catch up" />
     <MESSAGE value="fixed cross platform bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed cross platform bug" />
+    <MESSAGE value="MID STEP" />
+    <option name="LAST_COMMIT_MESSAGE" value="MID STEP" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="405" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589855790721">
@@ -119,48 +129,48 @@
     <state x="561" y="405" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589855790721" />
     <state x="561" y="405" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762446668" />
     <state x="421" y="351" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1133@0.23.1920.1133" timestamp="1589854614622" />
-    <state x="734" y="319" key="CommitChangelistDialog2" timestamp="1589854017829">
+    <state x="734" y="319" key="CommitChangelistDialog2" timestamp="1589856967235">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589854017829" />
+    <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589856967235" />
     <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589822647433" />
     <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762915970" />
     <state x="974" y="505" key="EnvironmentVariablesDialog" timestamp="1589840329389">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="974" y="505" key="EnvironmentVariablesDialog/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589840329389" />
-    <state width="601" height="266" key="GridCell.Tab.0.bottom" timestamp="1589856056973">
+    <state width="601" height="266" key="GridCell.Tab.0.bottom" timestamp="1589864744606">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="946" height="163" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@-1280.-306.1280.984" timestamp="1589839761290" />
-    <state width="601" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589856056973" />
+    <state width="601" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589864744606" />
     <state width="903" height="163" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589837529776" />
     <state width="903" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589833386714" />
     <state width="1362" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589779313318" />
     <state width="939" height="271" key="GridCell.Tab.0.bottom/0.23.1920.1133@0.23.1920.1133" timestamp="1589855264657" />
-    <state width="601" height="266" key="GridCell.Tab.0.center" timestamp="1589856056973">
+    <state width="601" height="266" key="GridCell.Tab.0.center" timestamp="1589864744606">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="946" height="163" key="GridCell.Tab.0.center/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@-1280.-306.1280.984" timestamp="1589839761290" />
-    <state width="601" height="266" key="GridCell.Tab.0.center/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589856056973" />
+    <state width="601" height="266" key="GridCell.Tab.0.center/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589864744606" />
     <state width="903" height="163" key="GridCell.Tab.0.center/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589837529776" />
     <state width="903" height="266" key="GridCell.Tab.0.center/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589833386714" />
     <state width="1362" height="266" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589779313318" />
     <state width="939" height="271" key="GridCell.Tab.0.center/0.23.1920.1133@0.23.1920.1133" timestamp="1589855264656" />
-    <state width="601" height="266" key="GridCell.Tab.0.left" timestamp="1589856056973">
+    <state width="601" height="266" key="GridCell.Tab.0.left" timestamp="1589864744606">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="946" height="163" key="GridCell.Tab.0.left/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@-1280.-306.1280.984" timestamp="1589839761290" />
-    <state width="601" height="266" key="GridCell.Tab.0.left/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589856056973" />
+    <state width="601" height="266" key="GridCell.Tab.0.left/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589864744606" />
     <state width="903" height="163" key="GridCell.Tab.0.left/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589837529776" />
     <state width="903" height="266" key="GridCell.Tab.0.left/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589833386714" />
     <state width="1362" height="266" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589779313317" />
     <state width="939" height="271" key="GridCell.Tab.0.left/0.23.1920.1133@0.23.1920.1133" timestamp="1589855264655" />
-    <state width="601" height="266" key="GridCell.Tab.0.right" timestamp="1589856056973">
+    <state width="601" height="266" key="GridCell.Tab.0.right" timestamp="1589864744606">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="946" height="163" key="GridCell.Tab.0.right/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@-1280.-306.1280.984" timestamp="1589839761290" />
-    <state width="601" height="266" key="GridCell.Tab.0.right/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589856056973" />
+    <state width="601" height="266" key="GridCell.Tab.0.right/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589864744606" />
     <state width="903" height="163" key="GridCell.Tab.0.right/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589837529776" />
     <state width="903" height="266" key="GridCell.Tab.0.right/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589833386714" />
     <state width="1362" height="266" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589779313318" />
@@ -185,5 +195,9 @@
     <state x="916" y="664" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589854225051" />
     <state x="916" y="664" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589822642135" />
     <state x="687" y="560" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1133@0.23.1920.1133" timestamp="1589854456508" />
+    <state x="698" y="501" width="672" height="678" key="search.everywhere.popup" timestamp="1589863884832">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="698" y="501" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589863884832" />
   </component>
 </project>
