@@ -30,7 +30,7 @@ for port in comports:
     except TypeError:
         pass
     else:
-        print('Got it: ' + ard_comport)
+        pass
 
 try:
     ard_comport
