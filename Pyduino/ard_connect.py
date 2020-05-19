@@ -66,9 +66,9 @@ if __name__ == "__main__":
     print(arduino.inWaiting())
     from_arduino = arduino.read(arduino.inWaiting()).decode()
     print(from_arduino)
-
-    arduino.write('does this work'.encode())
-    print('sent')
+    #
+    # arduino.write('does this work'.encode())
+    # print('sent')
 
     arduino.close() # don't forget to close!!
 
