@@ -3,11 +3,10 @@ import serial
 from serial.tools import list_ports
 import time
 import json
-
 # http://api.openweathermap.org/data/2.5/weather?q=dresher&appid=d6d8ad8bf09830790c7682b34d393742
 key = "d6d8ad8bf09830790c7682b34d393742"
 location = "dresher"
-url = 'http://api.openweathermap.org/data/2.5/weather?q=' + location + '&appid=' + key
+url = 'http://api.openweathermap.org/data/2.5/weather?q='+location+'&appid='+key
 req = requests.get(url)
 print(req.status_code)
 
@@ -18,14 +17,23 @@ data = req.json()
 comports = list_ports.comports()
 # print(comports[1].description)
 for port in comports:
-    print(port.description)
-    if 'Arduino' in port.description:
-        ard_comport = port.device
-        print("this worked: " + ard_comport)
+    try:
+        print(port.manufacturer)
+        if 'Arduino' in port.description:
+            ard_comport = port.device
+            print("this worked: " + ard_comport)
+        elif 'Arduino' in port.manufacturer:
+            ard_comport = port.device
+            print("this worked: " + ard_comport)
+    except TypeError:
+        print('')
+    else:
+        print('Got it: ' + ard_comport)
+
 try:
     ard_comport
 except NameError:
-    print("well, Ardino wasn't after all!")
+    print("well, Ardino wasn't connected after all!")
     exit()
 else:
     print("sure, Arduino connected.")
@@ -36,12 +44,11 @@ arduino.port = ard_comport
 arduino.open()
 time.sleep(3)
 arduino.write(b'hi')
-print('sent 1')
-from_arduino = arduino.readline().decode()
-print(from_arduino[0:-2])  # removes the \n that makes the new line since we don't need that here.
-time.sleep(2)
+print('sent')
+time.sleep(3)
 arduino.write('does this work'.encode())
-print('sent 2')
-from_arduino = arduino.readline().decode()
-print(from_arduino[0:-2])
+print('sent')
+from_arduino = arduino.read().decode()
+print(from_arduino)
 arduino.close()
+
