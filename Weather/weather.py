@@ -22,11 +22,13 @@ for port in comports:
         if 'Arduino' in port.description:
             ard_comport = port.device
             print("this worked: " + ard_comport)
+            break
         elif 'Arduino' in port.manufacturer:
             ard_comport = port.device
             print("this worked: " + ard_comport)
+            break
     except TypeError:
-        print('')
+        pass
     else:
         print('Got it: ' + ard_comport)
 
@@ -42,13 +44,17 @@ arduino = serial.Serial(timeout=1)
 arduino.baudrate = 9600
 arduino.port = ard_comport
 arduino.open()
-time.sleep(3)
+
+time.sleep(2)
 arduino.write(b'hi')
 print('sent')
-time.sleep(3)
+# from_arduino = arduino.readline().decode()
+# print(from_arduino)
+# time.sleep(2)
 arduino.write('does this work'.encode())
 print('sent')
-from_arduino = arduino.read().decode()
+# time.sleep(2)
+from_arduino = arduino.readline().decode()
 print(from_arduino)
 arduino.close()
 
