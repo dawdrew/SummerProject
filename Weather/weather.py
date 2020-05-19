@@ -45,7 +45,7 @@ arduino.baudrate = 9600
 arduino.port = ard_comport
 arduino.open()
 
-time.sleep(2) # DO NOT DELETE THIS!!!
+time.sleep(2) # DO NOT DELETE THIS!!! needs to initialize (could add check for ready)
 arduino.flushInput()
 arduino.write(b'hi')
 print('sent')
@@ -53,15 +53,16 @@ print('sent')
 
 time.sleep(1)
 print(arduino.inWaiting())
-from_arduino = arduino.readline().decode()
+from_arduino = arduino.read(arduino.inWaiting()).decode()
 print(from_arduino)
 
 time.sleep(1)
 arduino.write('does this work'.encode())
 print('sent')
 
-
-from_arduino = arduino.readline().decode()
+time.sleep(1)
+print(arduino.inWaiting())
+from_arduino = arduino.read().decode()
 print(from_arduino)
 
 
