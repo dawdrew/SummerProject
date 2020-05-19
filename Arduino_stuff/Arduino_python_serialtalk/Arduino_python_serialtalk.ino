@@ -29,7 +29,7 @@ void loop() {
       lcd.write(Serial.read());
 
     }
-    Serial.write("hi python what if this is really loong and not jsut a simple short little string??!?!?! then what will you do?!?!\n");
+    Serial.write("recieved\n");
   }
   // put your main code here, to run repeatedly:
 }

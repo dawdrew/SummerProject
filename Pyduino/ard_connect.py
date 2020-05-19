@@ -13,18 +13,20 @@ import json
 # # reqxml = requests.get(url+"&mode=xml")
 # data = req.json()
 # # print(data)
-comname = 'Arduino'
-def ardcon(comname):
+COMname = 'Arduino'
+
+
+def ardcon(COMname):
     comports = list_ports.comports()
     # print(comports[1].description)
     for port in comports:
         try:
             print(port.manufacturer)
-            if comname in port.description:
+            if COMname in port.description:
                 ard_comport = port.device
                 print("this worked: " + ard_comport)
                 break
-            elif comname in port.manufacturer:
+            elif COMname in port.manufacturer:
                 ard_comport = port.device
                 print("this worked: " + ard_comport)
                 break
@@ -45,30 +47,29 @@ def ardcon(comname):
     arduino.baudrate = 9600
     arduino.port = ard_comport
     arduino.open()
+    while 5 > arduino.inWaiting():
+        pass
+    print(arduino.inWaiting())
     return arduino
 
 
 if __name__ == "__main__":
     # execute only if run as a script
-    ardcon(comname)
-    while 5 > ardcon.inWaiting():
-        pass
-    print(ardcon.inWaiting())
-
-    ardcon.flushInput()
-    ardcon.write(b'hi')
+    arduino = ardcon(COMname)
+    arduino.flushInput()
+    arduino.write(b'hi')
     print('sent')
 
-    while 5 > ardcon.inWaiting():
+    while 5 > arduino.inWaiting():
         pass
     time.sleep(1.2)
-    print(ardcon.inWaiting())
-    from_arduino = ardcon.read(ardcon.inWaiting()).decode()
+    print(arduino.inWaiting())
+    from_arduino = arduino.read(arduino.inWaiting()).decode()
     print(from_arduino)
 
-
-    ardcon.write('does this work'.encode())
+    arduino.write('does this work'.encode())
     print('sent')
 
-    ardcon.close()
+    arduino.close() # don't forget to close!!
+
 

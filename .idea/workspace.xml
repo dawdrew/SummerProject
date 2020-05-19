@@ -6,10 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="183f9da6-7d3b-44de-bd1b-55f6a156e905" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Weather/ard_connect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Arduino_stuff/Arduino_python_serialtalk/Arduino_python_serialtalk.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Arduino_stuff/Arduino_python_serialtalk/Arduino_python_serialtalk.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Weather/weather.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pyduino/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather/ard_connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pyduino/ard_connect.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589856967828</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Renamed file and got the arduino talking better">
+      <created>1589864973479</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589864973480</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,7 +127,8 @@
     <MESSAGE value="weather catch up" />
     <MESSAGE value="fixed cross platform bug" />
     <MESSAGE value="MID STEP" />
-    <option name="LAST_COMMIT_MESSAGE" value="MID STEP" />
+    <MESSAGE value="Renamed file and got the arduino talking better" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed file and got the arduino talking better" />
   </component>
   <component name="WindowStateProjectService">
     <state x="561" y="405" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589855790721">
@@ -129,48 +137,48 @@
     <state x="561" y="405" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589855790721" />
     <state x="561" y="405" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762446668" />
     <state x="421" y="351" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1133@0.23.1920.1133" timestamp="1589854614622" />
-    <state x="734" y="319" key="CommitChangelistDialog2" timestamp="1589856967235">
+    <state x="734" y="319" key="CommitChangelistDialog2" timestamp="1589864972855">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589856967235" />
+    <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589864972855" />
     <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589822647433" />
     <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762915970" />
     <state x="974" y="505" key="EnvironmentVariablesDialog" timestamp="1589840329389">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="974" y="505" key="EnvironmentVariablesDialog/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589840329389" />
-    <state width="601" height="266" key="GridCell.Tab.0.bottom" timestamp="1589864744606">
+    <state width="601" height="266" key="GridCell.Tab.0.bottom" timestamp="1589865419279">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="946" height="163" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@-1280.-306.1280.984" timestamp="1589839761290" />
-    <state width="601" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589864744606" />
+    <state width="601" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589865419279" />
     <state width="903" height="163" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589837529776" />
     <state width="903" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589833386714" />
     <state width="1362" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589779313318" />
     <state width="939" height="271" key="GridCell.Tab.0.bottom/0.23.1920.1133@0.23.1920.1133" timestamp="1589855264657" />
-    <state width="601" height="266" key="GridCell.Tab.0.center" timestamp="1589864744606">
+    <state width="601" height="266" key="GridCell.Tab.0.center" timestamp="1589865419279">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="946" height="163" key="GridCell.Tab.0.center/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@-1280.-306.1280.984" timestamp="1589839761290" />
-    <state width="601" height="266" key="GridCell.Tab.0.center/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589864744606" />
+    <state width="601" height="266" key="GridCell.Tab.0.center/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589865419279" />
     <state width="903" height="163" key="GridCell.Tab.0.center/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589837529776" />
     <state width="903" height="266" key="GridCell.Tab.0.center/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589833386714" />
     <state width="1362" height="266" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589779313318" />
     <state width="939" height="271" key="GridCell.Tab.0.center/0.23.1920.1133@0.23.1920.1133" timestamp="1589855264656" />
-    <state width="601" height="266" key="GridCell.Tab.0.left" timestamp="1589864744606">
+    <state width="601" height="266" key="GridCell.Tab.0.left" timestamp="1589865419279">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="946" height="163" key="GridCell.Tab.0.left/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@-1280.-306.1280.984" timestamp="1589839761290" />
-    <state width="601" height="266" key="GridCell.Tab.0.left/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589864744606" />
+    <state width="601" height="266" key="GridCell.Tab.0.left/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589865419279" />
     <state width="903" height="163" key="GridCell.Tab.0.left/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589837529776" />
     <state width="903" height="266" key="GridCell.Tab.0.left/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589833386714" />
     <state width="1362" height="266" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589779313317" />
     <state width="939" height="271" key="GridCell.Tab.0.left/0.23.1920.1133@0.23.1920.1133" timestamp="1589855264655" />
-    <state width="601" height="266" key="GridCell.Tab.0.right" timestamp="1589864744606">
+    <state width="601" height="266" key="GridCell.Tab.0.right" timestamp="1589865419279">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="946" height="163" key="GridCell.Tab.0.right/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@-1280.-306.1280.984" timestamp="1589839761290" />
-    <state width="601" height="266" key="GridCell.Tab.0.right/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589864744606" />
+    <state width="601" height="266" key="GridCell.Tab.0.right/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589865419279" />
     <state width="903" height="163" key="GridCell.Tab.0.right/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589837529776" />
     <state width="903" height="266" key="GridCell.Tab.0.right/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589833386714" />
     <state width="1362" height="266" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589779313318" />
@@ -180,10 +188,10 @@
     </state>
     <state x="-1143" y="283" key="SettingsEditor/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589836961844" />
     <state x="608" y="395" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762587862" />
-    <state x="699" y="483" key="Vcs.Push.Dialog.v2" timestamp="1589854020481">
+    <state x="699" y="483" key="Vcs.Push.Dialog.v2" timestamp="1589865019472">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="699" y="483" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589854020481" />
+    <state x="699" y="483" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589865019472" />
     <state x="699" y="483" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762921739" />
     <state x="1392" y="407" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589832801606">
       <screen x="0" y="0" width="2560" height="1400" />
