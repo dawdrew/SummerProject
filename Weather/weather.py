@@ -17,14 +17,23 @@ data = req.json()
 comports = list_ports.comports()
 # print(comports[1].description)
 for port in comports:
-    print(port.description)
-    if 'Arduino' in port.description:
-        ard_comport = port.device
-        print("this worked: "+ard_comport)
+    try:
+        print(port.manufacturer)
+        if 'Arduino' in port.description:
+            ard_comport = port.device
+            print("this worked: " + ard_comport)
+        elif 'Arduino' in port.manufacturer:
+            ard_comport = port.device
+            print("this worked: " + ard_comport)
+    except TypeError:
+        print('')
+    else:
+        print('Got it: ' + ard_comport)
+
 try:
     ard_comport
 except NameError:
-    print("well, Ardino wasn't after all!")
+    print("well, Ardino wasn't connected after all!")
     exit()
 else:
     print("sure, Arduino connected.")
