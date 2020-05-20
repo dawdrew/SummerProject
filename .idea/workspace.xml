@@ -5,11 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="183f9da6-7d3b-44de-bd1b-55f6a156e905" name="Default Changelist" comment="Start of FLASK">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cd" beforeDir="false" />
-    </list>
+    <list default="true" id="183f9da6-7d3b-44de-bd1b-55f6a156e905" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589908477528</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixing gitnore">
+      <created>1589945421279</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589945421279</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixing gitnore">
+      <created>1589945595543</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589945595543</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,7 +165,8 @@
     <MESSAGE value="MID STEP" />
     <MESSAGE value="Renamed file and got the arduino talking better" />
     <MESSAGE value="Start of FLASK" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start of FLASK" />
+    <MESSAGE value="fixing gitnore" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing gitnore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="266" y="382" key="#Inspections" timestamp="1589915401439">
@@ -176,10 +187,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="387" y="558" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589915434850" />
-    <state x="734" y="319" key="CommitChangelistDialog2" timestamp="1589915658639">
+    <state x="734" y="319" key="CommitChangelistDialog2" timestamp="1589945595116">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589915658639" />
+    <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589945595116" />
     <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589822647433" />
     <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762915970" />
     <state x="974" y="505" key="EnvironmentVariablesDialog" timestamp="1589840329389">
@@ -236,19 +247,19 @@
     <state x="640" y="376" key="SettingsEditor/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589945272071" />
     <state x="-1143" y="283" key="SettingsEditor/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589836961844" />
     <state x="608" y="395" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762587862" />
-    <state x="699" y="483" key="Vcs.Push.Dialog.v2" timestamp="1589940311793">
+    <state x="699" y="483" key="Vcs.Push.Dialog.v2" timestamp="1589945451503">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="699" y="483" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589940311793" />
+    <state x="699" y="483" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589945451503" />
     <state x="699" y="483" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762921739" />
     <state x="1392" y="407" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589832801606">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1392" y="407" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589832801606" />
-    <state x="916" y="664" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589906394055">
+    <state x="916" y="664" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589945409963">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="916" y="664" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589906394055" />
+    <state x="916" y="664" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589945409963" />
     <state x="916" y="664" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589822642135" />
     <state x="687" y="560" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1920.1133@0.23.1920.1133" timestamp="1589904970317" />
     <state x="698" y="501" width="672" height="678" key="search.everywhere.popup" timestamp="1589863884832">
