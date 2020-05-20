@@ -10,7 +10,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="183f9da6-7d3b-44de-bd1b-55f6a156e905" name="Default Changelist" comment="Corrected some logic errors with sending and getting messages on arduino" />
+    <list default="true" id="183f9da6-7d3b-44de-bd1b-55f6a156e905" name="Default Changelist" comment="Corrected some logic errors with sending and getting messages on arduino">
+      <change beforePath="$PROJECT_DIR$/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/blog.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/blog.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
