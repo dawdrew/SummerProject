@@ -6,16 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="183f9da6-7d3b-44de-bd1b-55f6a156e905" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_18_20,_10_07_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_18_2020_10_04_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_18_2020_10_04_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_18_2020_10_35_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_18_2020_9_14_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_18_2020_9_14_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_18_20__10_07_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_19_2020_12_39_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +47,11 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Andrew Rearson\PycharmProjects\SummerProject\.pytest_cache" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Andrew Rearson\PycharmProjects\SummerProject" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrew Rearson\PycharmProjects\SummerProject\.pytest_cache" />
     </key>
   </component>
   <component name="RunManager">
@@ -179,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590110377918</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="making sure the renaming went all the way through">
+      <created>1590795075131</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1590795075131</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,7 +201,8 @@
     <MESSAGE value="Start of FLASK" />
     <MESSAGE value="fixing gitnore" />
     <MESSAGE value="started kiosk project" />
-    <option name="LAST_COMMIT_MESSAGE" value="started kiosk project" />
+    <MESSAGE value="making sure the renaming went all the way through" />
+    <option name="LAST_COMMIT_MESSAGE" value="making sure the renaming went all the way through" />
   </component>
   <component name="WindowStateProjectService">
     <state x="266" y="382" key="#Inspections" timestamp="1589915401439">
@@ -224,10 +223,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="387" y="558" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589915434850" />
-    <state x="734" y="319" key="CommitChangelistDialog2" timestamp="1590110377410">
+    <state x="734" y="319" key="CommitChangelistDialog2" timestamp="1590795074595">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1590110377410" />
+    <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1590795074595" />
     <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589822647433" />
     <state x="734" y="319" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762915970" />
     <state x="974" y="505" key="EnvironmentVariablesDialog" timestamp="1589840329389">
@@ -284,10 +283,10 @@
     <state x="640" y="376" key="SettingsEditor/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1589945272071" />
     <state x="-1143" y="283" key="SettingsEditor/0.0.2560.1400/-1280.45.1280.984/2560.0.1920.1040@-1280.45.1280.984" timestamp="1589836961844" />
     <state x="608" y="395" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762587862" />
-    <state x="699" y="483" key="Vcs.Push.Dialog.v2" timestamp="1590110385141">
+    <state x="699" y="483" key="Vcs.Push.Dialog.v2" timestamp="1590795265893">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="699" y="483" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1590110385141" />
+    <state x="699" y="483" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1280.-306.1280.984/2560.0.1920.1040@0.0.2560.1400" timestamp="1590795265893" />
     <state x="699" y="483" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040/-1600.0.1600.860@0.0.2560.1400" timestamp="1589762921739" />
     <state x="1392" y="407" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589832801606">
       <screen x="0" y="0" width="2560" height="1400" />
