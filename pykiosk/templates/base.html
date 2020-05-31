@@ -1,14 +1,14 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
+<title>{% block title %}{% endblock %} - TrainName</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <nav>
-  <h1>Flaskr</h1>
+  <h1>Train Station - <span id="datetime"></span></h1>
   <ul>
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
       <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
     {% else %}
-      <li><a href="{{ url_for('auth.register') }}">Register</a>
+<!--      <li><a href="{{ url_for('auth.register') }}">Register</a>-->
       <li><a href="{{ url_for('auth.login') }}">Log In</a>
     {% endif %}
   </ul>
@@ -22,3 +22,8 @@
   {% endfor %}
   {% block content %}{% endblock %}
 </section>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+</script>
