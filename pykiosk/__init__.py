@@ -7,7 +7,7 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-        SECRET_KEY='dev', # this app is NOT SECURE until changed remember me!!!!!!!!!!
+        SECRET_KEY='dev',  # this app is NOT SECURE until changed remember me!!!!!!!!!!
         DATABASE=os.path.join(app.instance_path, 'pykiosk.sqlite'),
     )
 
