@@ -10,7 +10,7 @@ from pykiosk.db import get_db
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 
 
-@bp.route('/register', methods=('GET', 'POST'))
+@bp.route('/register', methods=('GET', 'POST', 'BACK'))
 def register():
     if request.method == 'POST':
         username = request.form['username']
@@ -53,7 +53,6 @@ def login():
 
         if user is None:
             error = 'Incorrect username.'
-        elif not check_password_hash(user['password'], password):
         elif not check_password_hash(user['password'], password):
             error = 'Incorrect password.'
 

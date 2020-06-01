@@ -30,8 +30,11 @@
 
 
     <input type="submit" value="Save">
+    </form>
+    <form action="{{ url_for('blog.cancel')}}" method="post">
     <input type="submit" value="Cancel">
-  </form>
+    </form>
+
   <hr>
   <form action="{{ url_for('blog.delete', id=post['id']) }}" method="post">
     <input class="danger" type="submit" value="Delete" onclick="return confirm('Are you sure?');">

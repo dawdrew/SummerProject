@@ -107,3 +107,9 @@ def delete(id):
     db.execute('DELETE FROM post WHERE id = ?', (id,))
     db.commit()
     return redirect(url_for('blog.index'))
+
+
+@bp.route('/cancel', methods=('POST',))
+@login_required
+def cancel():
+    return redirect(url_for('blog.index'))
