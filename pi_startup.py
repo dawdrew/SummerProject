@@ -3,7 +3,7 @@ import time
 runserver = input('Run Fulgen Server??--Y/n \n')
 
 if runserver == 'yes' or runserver == 'y' or runserver == "Y" or runserver == "Yes":
-   os.system('source ./please.sh')
+   os.system('source /home/pi/Documents/python/fulgen/SummerProject/please.sh')
     # os.system("cd /")
     # os.system("cd /home/pi/Documents/python/fulgen/SummerProject")
     # time.sleep(2)
