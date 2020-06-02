@@ -10,3 +10,4 @@ if [ "$var1" == "y" ]; then
   flask run --host=0.0.0.0
 else
     echo "okay"
+exit N
