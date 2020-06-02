@@ -3,6 +3,7 @@ import os
 runserver = input('Run Fulgen Server??--Y/n')
 
 if runserver == 'yes' or runserver == 'y' or runserver == "Y" or runserver == "Yes":
+    os.system("cd /")
     os.system("cd /Documents/python/fulgen/SummerProject")
     os.system(". venv/bin/activate")
     os.system('export FLASK_APP=pykiosk')
