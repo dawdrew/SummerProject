@@ -4,7 +4,7 @@ runserver = input('Run Fulgen Server??--Y/n \n')
 
 if runserver == 'yes' or runserver == 'y' or runserver == "Y" or runserver == "Yes":
     os.system("cd /")
-    os.system('source /home/pi/Documents/python/fulgen/SummerProject/please.sh')
+    os.system('bash /home/pi/Documents/python/fulgen/SummerProject/please.sh')
     # os.system("cd /home/pi/Documents/python/fulgen/SummerProject")
     # time.sleep(2)
     # os.system(". venv/bin/activate")
