@@ -14,9 +14,12 @@ bp = Blueprint('order', __name__)
 def lists():
     db = get_db()
     orders = db.execute(
-        ' SELECT o.id, order_time, total_cost, o.rfid_user_id, r_name, user_id, '
-        'username, food_id, food_count, food_name'
-        ' FROM orders o'
+        ' SELECT o.id, order_time, o.rfid_user_total_o_count, total_cost, o.rfid_user_id, o.user_id,'
+        ' r_name,  '  # values from rfid_user 
+        ' username,'  # values from user (kiosk)
+        ' food_id, food_count,'  # values from list_food
+        ' food_name'  # values from food
+        ' FROM orders o'  
         ' JOIN user u ON o.user_id = u.id '
         ' JOIN rfid_user r ON o.rfid_user_id = r.id'
         ' JOIN list_foods lf ON r.id = lf.rfid_user_id'
