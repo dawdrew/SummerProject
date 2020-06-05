@@ -42,6 +42,7 @@ def register():
 
 @bp.route('/login', methods=('GET', 'POST'))
 def login():
+    preregister()
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -94,3 +95,14 @@ def login_required(view):
 
     return wrapped_view
 
+
+def preregister():
+    db = get_db()
+    if db.execute('SELECT id FROM user').fetchone() is not None:
+        pass
+    else:
+        db.execute(
+                'INSERT INTO user (username, password) VALUES (?,?),(?,?)',
+                ('1', generate_password_hash('1'), '2', generate_password_hash('2'))
+            )
+        db.commit()

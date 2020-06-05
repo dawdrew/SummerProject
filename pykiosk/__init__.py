@@ -39,4 +39,8 @@ def create_app(test_config=None):
     app.register_blueprint(blog.bp)
     app.add_url_rule('/', endpoint='index')
 
+    from . import order
+    app.register_blueprint(order.bp)
+    # app.add_url_rule('/', endpoint='lists')
+
     return app
