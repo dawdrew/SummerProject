@@ -145,6 +145,7 @@ CREATE TABLE list_foods (
 INSERT INTO list_foods(rfid_user_id,rfid_user_total_o_count,food_id,food_count)
 VALUES
   (1,1,3,3),
+  (2,1,1,2),
   (2,1,2,1),
   (1,2,1,2),
   (2,2,1,1);
@@ -175,20 +176,20 @@ DROP TABLE IF EXISTS orders;
 CREATE TABLE orders (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   order_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  car_table_table_num INTEGER NOT NULL,
+  user_id INTEGER NOT NULL,
+  car_table_id INTEGER NOT NULL,
   rfid_user_id INTEGER NOT NULL,
   total_cost INTEGER NOT NULL,
-  car_table_id INTEGER NOT NULL,
   rfid_user_total_o_count INTEGER NOT NULL,
-  FOREIGN KEY (car_table_table_num) REFERENCES car_table (table_num),
-  FOREIGN KEY (rfid_user_id) REFERENCES rfid_user (id),
+  FOREIGN KEY (user_id) REFERENCES user (id),
   FOREIGN KEY (car_table_id) REFERENCES car_table (id),
+  FOREIGN KEY (rfid_user_id) REFERENCES rfid_user (id),
   FOREIGN KEY (rfid_user_total_o_count) REFERENCES rfid_user (total_o_count)
 );
 
-INSERT INTO orders(user_id,rfid_user_id,total_cost,car_table_id,rfid_user_total_o_count)
+INSERT INTO orders(car_table_id,rfid_user_id,total_cost,rfid_user_total_o_count, user_id)
 VALUES
   (1,1,15,1,1),
-  (2,2,10,2,1),
-  (2,2,05,3,2),
-  (1,1,01,4,2);
+  (2,2,10,1,1),
+  (2,2,05,2,1),
+  (1,1,01,2,1);

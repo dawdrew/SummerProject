@@ -12,14 +12,14 @@
     <article class="post">
       <header>
         <div>
-          <h1>{{ order['r_name'] }}</h1>
-          <div class="about">by {{ order['username'] }} on {{ order['order_time'].strftime('%Y-%m-%d') }}</div>
+          <h1>Rider Name:{{ order['r_name'] }}</h1>
+          <div class="about">by kiosk {{ order['username'] }} on {{ order['order_time'].strftime('%Y-%m-%d') }}</div>
         </div>
         {% if g.user['id'] == order['user_id'] %}
           <a class="action" href="{{ url_for('blog.update', id=order['id']) }}">Edit</a>
         {% endif %}
       </header>
-      <p class="body">${{ order['total_cost'] }}</p>
+      <p class="body">${{ order['total_cost'] }} for {{ order['food_count']}}{{ order['food_name']}} </p>
     </article>
     {% if not loop.last %}
       <hr>
