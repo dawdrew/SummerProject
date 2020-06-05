@@ -3,7 +3,6 @@
 LiquidCrystal lcd(7, 8, 9, 10, 11, 12);
 
 
-
 void setup() {
   Serial.begin(9600);
   // put your setup code here, to run once:
@@ -18,7 +17,11 @@ void setup() {
 }
 
 void loop() {
-  if (Serial.available()) {
+listen();
+}
+
+void listen(){
+    if (Serial.available()) {
     // wait a bit for the entire message to arrive
     delay(100);
     // clear the screen
@@ -29,7 +32,7 @@ void loop() {
       lcd.write(Serial.read());
 
     }
-    Serial.write("recieved\n");
+    Serial.write("recieved");
+    Serial.write('\n');
   }
-  // put your main code here, to run repeatedly:
 }
