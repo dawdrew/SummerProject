@@ -12,3 +12,5 @@
 *.egg-info/
 /venv/
 /.idea/
+.DS_Store
+
